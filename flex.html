@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>face</title>
     <link rel="stylesheet" href="./public/css/flex.css">
+    <script src="./public/js/flex.js"></script>
+    <script src="./public/js/jquery-1.11.3.min.js"></script>
+    <script src="./public/js/index.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="first-face">
+                <a href="#top"></a>
                 <span class="pip">0</span>
             </div>
             <div class="second-face">
@@ -22,6 +26,8 @@
                 <span class="pip">2</span>
                 <span class="pip">3</span>
             </div>
+            <!-- 锚点回到顶部，带着name名字的a链接叫锚点，可回到顶部，所有浏览器都兼容 -->
+            <a name="top"></a>
 
             <div class="fourth-face">
                 <span class="pip">1</span>
@@ -250,22 +256,66 @@
                 <div class="align align3">3</div>
                 <div class="align align4">4</div>
             </div>
+            <div class="align-items baselinetitle">
+                <div class="baseline-title">
+                    <p style="color:#fff;">
+                        <span>baseline</span>
+                        项目第一行文字的基线对齐
+                    </p>
+                </div>
+            </div>
+            
             <div class="align-items baseline">
                 <div class="align align1">1</div>
-                <div class="align align2">2</div>
+                <div class="align align2">base line</div>
                 <div class="align align3">3</div>
                 <div class="align align4">4</div>
             </div>
             <div class="align-items stretch">
                 <div class="align ">1</div>
                 <div class="align ">2</div>
-                <div class="align ">3</div>
+                <div class="align ">stretch</div>
                 <div class="align ">4</div>
             </div>
         </div>
 
         <!--  -->
     </section>
-
+    <!-- 用户输入体验 -->
+    <section>
+        <div class="main">
+            <div class="left">
+                <p>用户名：</p>
+                <p id="name2"></p>
+                <p>留言：</p>
+                <p id="area2" style="word-break:break-all; text-align:justify; word-wrap:break-word; white-space:pre-warp;"></p>
+            </div>
+            <div class="right">
+                <form action="">
+                    <p>用户名：</p>
+                    <p>
+                        <input type="text" placeholder="username" id="name">
+                    </p>
+                    <p>留言：</p>
+                    <p>
+                        <textarea name="" id="area" cols="30" rows="10" placeholder="留言区"></textarea>
+                    </p>
+                    <p>
+                        <input type="button" value="ok">
+                    </p>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+    <!-- 回到顶部 -->
+    <aside>
+        <div class="scrollTop gotop" id="scrollTop">
+            <img src="./public/img/timg.jpg" alt="">
+        </div>
+    </aside>
 </body>
+<script>
+    
+</script>
 </html>
