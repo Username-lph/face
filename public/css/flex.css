@@ -423,3 +423,22 @@ img{
     width:80px;
     height:80px;
 }
+/* form 表彰 */
+.select-title{
+    width:1200px;
+    margin:15px auto;
+}
+.form{
+    width:1200px;
+    height:300px;
+    padding:15px;
+    border-radius:15px;
+    border:2px solid #ccc;
+    display:flex;
+    margin:0 auto;
+}
+.city,.city-area,.county{
+    width:300px;
+    /* height:300px; */
+    padding:15px;
+}

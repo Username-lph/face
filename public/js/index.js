@@ -11,6 +11,17 @@
 // })
 
 $(function(){
+    //用户名留言部分 
+    $('#name').keyup(function () {
+        val = this.value;
+        // $('#name2').append(val);
+        $('#name2').html(val);
+    })
+    $('#area').keyup(function () {
+        val = this.value;
+        $('#area2').append(val);
+    })
+
     // // 判断是否为谷歌浏览器
     // function isChorme(){
     //     // 区分浏览器的内核
@@ -54,7 +65,7 @@ $(function(){
     // })
 
 
-    // jQuery已兼容各个浏览器
+    // （滚动条回到顶部）jQuery已兼容各个浏览器
     $(window).scroll(function(){
         if($(window).scrollTop()>200){
             $('.gotop').fadeIn(400);
@@ -70,5 +81,31 @@ $(function(){
         $('html,body').animate({'scrollTop':0},500);
         return false;
     })
+    // 下拉菜单
+    $('#select-city').change(function(){
+        val=this.value;
+        $('#choose').html(val);
+    })
+    $('#select-area').change(function(){
+        val=this.value;
+        $('#city-area').html(val);
+    })
+    $('#select-county').change(function(){
+        val=this.value;
+        $('#county').html(val);
+    })
 
+    // choose=$('#choose');
+    // city=$('#select-city');
+    // function getChange(obj,objs){
+    //     // val=obj.value;
+    //     alert(obj.value);
+       
+    //     // return  objs.html(val);;
+    // }
+    // city.change(function(){
+        
+    //     getChange(city,choose);
+    // })
+    
 })

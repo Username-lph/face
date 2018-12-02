@@ -63,4 +63,29 @@ window.onload=function(){
     //         document.documentElement.scrollTop=0;
     //     }
     // }
+
+    // 下拉菜单
+    // chooseobj=document.getElementById('choose');
+        
+    // selectobj = document.getElementById('select-city');
+    // // 当下单菜单的值（内容）发改改变时发生的事件，添加到某一个位置;
+    
+    // selectobj.onchange=function(){
+    //     val=this.value;
+    //     chooseobj.innerHTML=val;
+    // }
+
+    // area = document.getElementById('select-area');
+    // areaobj = document.getElementById('city-area');
+    // area.onchange=function(){
+    //     val=this.value;
+    //     areaobj.innerHTML=val;
+    // }
+
+    // county = document.getElementById('select-county');
+    // countyobj = document.getElementById('county');
+    // county.onchange=function(){
+    //     val=this.value;
+    //     countyobj.innerHTML=val;
+    // }
 }
